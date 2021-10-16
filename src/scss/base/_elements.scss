@@ -1,0 +1,33 @@
+html {
+  box-sizing: border-box;
+}
+
+// @see: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+iframe,
+object,
+embed,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+object,
+embed,
+video {
+  height: auto;
+}
+
+figure {
+  margin: 0;
+}
+
+label {
+  cursor: pointer;
+}
