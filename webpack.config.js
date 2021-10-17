@@ -1,17 +1,17 @@
-const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: 'production',
-  devtool: 'source-map',
-  entry: './src/js/index.js',
+  mode: "production",
+  devtool: "source-map",
+  entry: "./src/js/index.js",
   output: {
-    path: path.resolve(__dirname, 'public'),
-    filename: 'js/main.js',
+    path: path.resolve(__dirname, "public"),
+    filename: "js/main.js",
   },
   devServer: {
-    contentBase: path.resolve(__dirname, 'public'),
+    contentBase: path.resolve(__dirname, "public"),
     port: 9000,
     open: true,
   },
@@ -21,16 +21,16 @@ module.exports = {
         test: /\.js$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: "babel-loader",
         },
       },
       {
         test: /\.(svg|png|jp?g)$/i,
-        loader: 'file-loader',
+        loader: "file-loader",
         options: {
-          name: '[name].[ext]',
-          outputPath: 'images',
-          publicPath: 'images',
+          name: "[name].[ext]",
+          outputPath: "images",
+          publicPath: "images",
         },
       },
       {
@@ -40,22 +40,22 @@ module.exports = {
           {
             loader: MiniCssExtractPlugin.loader,
           },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader',
+          "css-loader",
+          "postcss-loader",
+          "sass-loader",
         ],
       },
     ],
   },
   plugins: [
     new HtmlWebpackPlugin({
-      minify: false,
+      minify: true,
       hash: true,
       inject: false,
-      template: './index.html',
+      template: "./src/index.html",
     }),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].css',
+      filename: "css/[name].css",
     }),
   ],
 };
