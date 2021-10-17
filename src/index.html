@@ -4,13 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="An initial theme for development" />
+
     <title>Starter Theme</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <%= htmlWebpackPlugin.tags.headTags %>
   </head>
 
   <body>
-    <h1>Bora codar!</h1>
-    <p>O Starter Theme já está rodando perfeitamente, agora é só codar.</p>
+    <header class="l-header">
+      <div class="c-container u-flex">
+        <h1 class="c-brand">Netflix</h1>
+        <ul class="c-nav">
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link">Home</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link">Séries</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link">Filmes</a>
+          </li>
+          <li class="c-nav__item">
+            <a href="#" class="c-nav__link">Documentários</a>
+          </li>
+        </ul>
+      </div>
+    </header>
 
     <%= htmlWebpackPlugin.tags.bodyTags %>
   </body>

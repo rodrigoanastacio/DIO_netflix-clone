@@ -1,0 +1,17 @@
+$component-name: "c-nav";
+
+.#{$component-name} {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  &__item {
+    margin: 5px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+  }
+}
