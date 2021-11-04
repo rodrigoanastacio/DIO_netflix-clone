@@ -1,0 +1,10 @@
+$component-name: "c-carousel";
+
+.#{$component-name} {
+  margin: -50px 0 50px 0;
+  color: #ffffff;
+
+  &__slide {
+    margin-left: 15px;
+  }
+}

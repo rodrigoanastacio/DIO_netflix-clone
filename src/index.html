@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="An initial theme for development" />
 
-    <title>Starter Theme</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +16,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
+
+    <title>Starter Theme</title>
 
     <%= htmlWebpackPlugin.tags.headTags %>
   </head>
@@ -69,7 +74,48 @@
           </div>
         </div>
       </section>
+
+      <section class="c-carousel">
+        <div class="c-carousel__slides js-carousel">
+          <div class="c-carousel__slide">
+            <img src="./images/mini1.jpg" alt="The Umbrella Academy" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini2.jpg" alt="Star Wars" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini3.jpg" alt="Pokémon" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini4.jpg" alt="Guerra Civil" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini5.jpg" alt="O Hobbit" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini6.jpg" alt="Breaking Bad" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini7.jpg" alt="The House" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini8.jpg" alt="Sobrenatural" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini9.jpg" alt="SmallVille" />
+          </div>
+          <div class="c-carousel__slide">
+            <img src="./images/mini10.jpg" alt="Vingadores" />
+          </div>
+        </div>
+
+        <!-- <button class="js-carousel--prev" aria-label="Anterior">o</button>
+        <button class="js-carousel--next" aria-label="Próximo">o</button> -->
+        <div class="js-carousel--dots" role="tablist"></div>
+      </section>
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
 
     <%= htmlWebpackPlugin.tags.bodyTags %>
   </body>
