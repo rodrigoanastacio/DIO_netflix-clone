@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -37,6 +37,39 @@
         </ul>
       </div>
     </header>
+
+    <main>
+      <section class="c-hero">
+        <img src="./images/capa-house.jpg" alt="House of cards" />
+        <div class="c-container">
+          <div class="c-hero__featured-movies">
+            <h2 class="c-hero__title">House of Cards</h2>
+            <p class="c-hero__description">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum ipsa
+              ipsum, aperiam harum nam corporis cum, aut maiores accusantium
+              optio doloribus quis et.
+            </p>
+            <div class="c-hero__links">
+              <a class="c-hero__link isActive" href="#">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 4l15 8-15 8z" fill="currentColor"></path>
+                </svg>
+                Assistir agora
+              </a>
+              <a class="c-hero__link" href="#">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-2 0a8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8zm-9 6v-7h2v7h-2zm1-8.75a1.21 1.21 0 0 1-.877-.364A1.188 1.188 0 0 1 10.75 8c0-.348.123-.644.372-.886.247-.242.54-.364.878-.364.337 0 .63.122.877.364.248.242.373.538.373.886s-.124.644-.373.886A1.21 1.21 0 0 1 12 9.25z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+                Mais informações
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <%= htmlWebpackPlugin.tags.bodyTags %>
   </body>

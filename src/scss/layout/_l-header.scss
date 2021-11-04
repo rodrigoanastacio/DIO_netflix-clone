@@ -3,4 +3,9 @@ $component-name: "l-header";
 .#{$component-name} {
   width: 100%;
   padding: 20px 0;
+  background-color: #000000;
+
+  .c-container {
+    align-items: center;
+  }
 }
